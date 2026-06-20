@@ -327,7 +327,7 @@
       "PowerHint": "INTERACTION",
       "Node": "FGUclampMin",
       "Duration": 800,
-      "Value": "60"
+      "Value": "80"
     },
     {
       "PowerHint": "INTERACTION",
