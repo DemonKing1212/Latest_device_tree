@@ -4,7 +4,6 @@
       "Name": "CPULittleClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
       "Values": [
-        "-1",
         "2000000",
         "1903000",
         "1800000",
@@ -44,17 +43,15 @@
         "900000",
         "740000",
         "650000",
-        "500000",
-        "-1"
+        "500000"
       ],
-      "DefaultIndex": 16,
+      "DefaultIndex": 15,
       "ResetOnInit": true
     },
     {
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq",
       "Values": [
-        "-1",
         "2600000",
         "2400000",
         "2275000",
@@ -94,10 +91,9 @@
         "1040000",
         "910000",
         "740000",
-        "650000",
-        "-1"
+        "650000"
       ],
-      "DefaultIndex": 16,
+      "DefaultIndex": 15,
       "ResetOnInit": true
     },
     {
@@ -297,7 +293,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TAUclampMin",
       "Duration": 600,
-      "Value": "60"
+      "Value": "70"
     },
     {
       "PowerHint": "INTERACTION",
@@ -309,7 +305,7 @@
       "PowerHint": "INTERACTION",
       "Node": "FGUclampMin",
       "Duration": 600,
-      "Value": "40"
+      "Value": "60"
     },
     {
       "PowerHint": "INTERACTION",
@@ -321,7 +317,7 @@
       "PowerHint": "INTERACTION",
       "Node": "GPUBlockBoost",
       "Duration": 600,
-      "Value": "50"
+      "Value": "60"
     },
     {
       "PowerHint": "INTERACTION",
@@ -351,19 +347,19 @@
       "PowerHint": "INTERACTION",
       "Node": "GPUDVFSMargin",
       "Duration": 600,
-      "Value": "50"
+      "Value": "45"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "GPUDVFSLoadingStep",
       "Duration": 600,
-      "Value": "4"
+      "Value": "15"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "TAUclampMin",
       "Duration": 2000,
-      "Value": "80"
+      "Value": "100"
     },
     {
       "PowerHint": "LAUNCH",
@@ -375,7 +371,7 @@
       "PowerHint": "LAUNCH",
       "Node": "FGUclampMin",
       "Duration": 2000,
-      "Value": "60"
+      "Value": "80"
     },
     {
       "PowerHint": "LAUNCH",
@@ -387,7 +383,7 @@
       "PowerHint": "LAUNCH",
       "Node": "GPUBlockBoost",
       "Duration": 2000,
-      "Value": "70"
+      "Value": "80"
     },
     {
       "PowerHint": "LAUNCH",
@@ -447,13 +443,13 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "FGUclampMin",
       "Duration": 0,
-      "Value": "40"
+      "Value": "60"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUBlockBoost",
       "Duration": 0,
-      "Value": "70"
+      "Value": "80"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
