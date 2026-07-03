@@ -1537,6 +1537,7 @@ vendor/lib/libthermalalgo.so
 vendor/lib64/libmtcloader.so
 
 # Trusted Execution Environment (TEE)
+-vendor/etc/vintf/manifest/manifest_microtrust_wechat.xml
 vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/init_thh_isee
 vendor/bin/teei_daemon
@@ -1602,6 +1603,7 @@ vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer_v2.so
 vendor/lib64/libOpenCL.so
+vendor/lib64/libtflite_mtk.so
 vendor/lib64/libapu_mdw.so
 vendor/lib64/libapu_mdw_batch.so
 vendor/lib64/libapusys.so
@@ -1997,6 +1999,13 @@ vendor/etc/mdota/MTK_OPOTA_SBPID_8.mcfopota
 vendor/etc/mdota/MTK_OPOTA_SBPID_9.mcfopota
 vendor/etc/mdota/MTK_OTA.mcfota
 
+# Secure Element
+vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+vendor/bin/hw/vendor.microtrust.hardware.se@1.0-service
+vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+vendor/etc/init/vendor.microtrust.hardware.se@1.0-service.rc
+vendor/lib64/secure_element-impl.so
+
 # Sensors
 vendor/etc/elliptic_sensor.xml
 vendor/lib64/hw/sensors.elliptic.so:vendor/lib64/hw/sensors.elliptic@2.0.so
@@ -2005,6 +2014,11 @@ vendor/lib64/libhfmanager.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 vendor/lib64/libsensor_custom.so
+
+# Soter
+vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
+vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
+vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
 
 # Vibrator
 vendor/firmware/aw8697_haptic.bin
